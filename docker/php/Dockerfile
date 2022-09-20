@@ -13,4 +13,10 @@ RUN apt-get update \
     && apt-get install -y libpq-dev \
     && docker-php-ext-install pdo_mysql pdo_pgsql mysqli
 RUN echo "alias ll='ls -la'" >> ~/.bashrc && . ~/.bashrc
+
+# nodeインストール(aptだとNodejsは古いため、パッケージマネージャの n を使用してインストール)
+RUN apt install -y npm \
+    && npm install n -g \
+    && n stable
+
 WORKDIR /var/www/html
