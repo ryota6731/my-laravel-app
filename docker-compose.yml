@@ -18,10 +18,10 @@ services:
   mysql:
     image: mysql:5.7
     environment:
-      MYSQL_DATABASE: ****
-      MYSQL_USER: ****
-      MYSQL_PASSWORD: ****
-      MYSQL_ROOT_PASSWORD: ****
+      MYSQL_DATABASE: team_project
+      MYSQL_USER: ryota
+      MYSQL_PASSWORD: pryota
+      MYSQL_ROOT_PASSWORD: pryota
     ports:
       - "3306:3306"
     volumes:
