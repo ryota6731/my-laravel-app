@@ -1,0 +1,45 @@
+#header-wrap{
+    width: 100%;
+    height:50px;
+    background-color: #677873;
+    line-height: 50px;
+}
+
+#header-left{
+    font-size: 20px;
+    color:#fff;
+    margin-left: 15px;
+}
+
+#header-right{
+    width:750px;
+    height:50px;
+    float: right;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.header-contents{
+    color:#fff;
+    text-decoration: none;
+}
+
+#sidebar-wrap{
+    width: 230px;
+    height:1000px;
+    background-color: red;
+    text-align: center;
+}
+
+#icon{
+    width: 180px;
+    height:170px;
+    background-color: aqua;
+}
+
+#introduce{
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
