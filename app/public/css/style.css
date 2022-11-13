@@ -93,3 +93,165 @@
     color: #E0E0E0;
 }
 
+
+/*　*********************  メインページ ************************** */
+
+#body{
+    display: flex;
+    height: 100%;
+}
+
+#main-wrap{
+    width: 100%;
+    background-color: red;
+}
+
+#store-info{
+    display: flex;
+    width: 100%;
+    float: right;
+    justify-content: end;
+    line-height: 40px;
+    background-color: aquamarine;
+}
+
+.info-contents{
+    margin-right: 20px;
+}
+
+#phone-number{
+    font-size: 20px;
+    color: #677873;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#business-hours{
+    font-size: 10px;
+}
+
+#cart{
+    font-size: 20px;
+    color: #677873;
+    cursor: pointer;
+}
+
+#register-logo{
+    width: 100%;
+    height: 250px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 30px;
+    color: #677873;
+    background-color: #F0F0F0;
+}
+
+#page-nest{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: blanchedalmond;
+}
+
+#top-page-tag{
+    color: #B3BBB9;
+}
+
+#top-page-tag::after{
+    content: ' > ';
+}
+
+#page-name{
+    color: #B3BBB9;
+    margin-left: 10px;
+}
+
+.post-contents{
+    margin: 0 auto;
+}
+
+.post-contents p{
+    line-height: 2;
+}
+
+#register-caution{
+    padding: 20px 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#author-link{
+    padding: 20px 25px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    width: 800px;
+    height: 60px;
+    line-height: 30px;
+}
+
+#author-link ul li::after{
+    content: '↓';
+    cursor: pointer;
+    margin: 0 0 0 5px;
+}
+
+#author-link ul li{
+    display: inline-block;
+    margin:0 10px;
+    color:#677873;
+}
+
+#apply-form01{
+    padding: 50px 0;
+}
+
+#apply-form01 h2{
+    color: #41603C;
+    text-align: center;
+}
+
+#apply-form01 h2::before{
+    content: '-----------------------------';
+    margin:0 30px 0 0;
+    color: #41603C;  
+}
+
+#apply-form01 h2::after{
+    content: '-----------------------------';
+    margin:0 0 0 30px;
+    color: #41603C;  
+}
+
+.step-box{
+    width: 800px;
+    margin: 0 auto;
+    clear: both;
+    border: 1px solid #C5CFC5;
+    border-top: none;
+    padding: 0 50px 30px;
+    margin: 20px auto 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.step-box-items{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.step-text{
+    width: 500px;
+}
+
+.clearfix{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearfix img{
+    margin: 0 40px 0 0;
+}
