@@ -28,6 +28,7 @@
             </div>
         </div>
 
+        <div id='body'>
             <div id="sidebar">
 
 
@@ -189,6 +190,80 @@
 
             </div>
 
+            <div id='main-wrap'>
+                <div id='store-info'>
+                    <div><a href='#' id='phone-number' class='info-contents'>052-369-0091</a></div>
+                    <div><a href='#' id='business-hours' class='info-contents'>受付時間：平日 9:00～18:00</a></div>
+                    <div><a href='#' id='cart' class='info-contents'>カートを見る</a></div>
+                </div>
+                <h2 id='register-logo'>会員登録</h2>
+
+                <!-- propsを使って動的な書き方に変更できそう -->
+                <div id='page-nest'>
+                    <a href='#' id='top-page-tag'>Top</a>
+                    <p id='page-name'>会員登録</p>  
+                </div>
+
+                <div class='post-contents'>
+
+                    <p class='text-center'>このサイトは、法人・店舗・個人事業主さまのみご利用いただけます。</p>
+                    <p class='text-center'>お取引をご希望される方は、以下申請フォームよりご登録をお願いいたします。</p>
+                    <p class='text-center'>折り返し、お取引条件、ID・パスワードなどをご連絡させていただきます。</p>
+
+                    <p class='text-center' id='register-caution'>※一般の個人の方は、ご登録いただけませんのでご注意ください。</p>
+
+                    <div id='author-link' class='text-center'>
+                        <ul>
+                            <li><a href='#'>登録の流れ</a></li>
+                            <li><a href='#'>会員登録申請フォーム</a></li>
+                        </ul> 
+                    </div>
+
+                    <div id='apply-form01'>
+                        <h2>登録の流れ</h2>
+                    </div>
+
+                    <div class='step-box'>
+                        <div class='step-box-items'>
+                            <img src="https://blog.dolabo.co.jp/wp-content/themes/do-2021/img/apply-form/apply-form_step1_title.png" alt="1.会員登録申請フォームに入力" width="660" height="35">
+                        </div>
+                        <div class='clearfix'>
+                            <img loading="lazy" src="https://blog.dolabo.co.jp/wp-content/themes/do-2021/img/apply-form/apply-form_step1.png" alt="会員登録申請フォームに入力" width="246" height="114">
+                            <div class='step-text'>
+                                <p>左メニューの「会員登録」より、登録フォームに情報を入力ください。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='text-center mt20'>
+                        <img loading="lazy" src="https://blog.dolabo.co.jp/wp-content/themes/do-2017/img/apply-form/shinsa.png" alt="審査：1～2営業日" width="151" height="31">
+                    </div>
+
+                    <div class='step-box'>
+                        <div class='step-box-items'>
+                            <img loading="lazy" src="https://blog.dolabo.co.jp/wp-content/themes/do-2017/img/apply-form/apply-form_step2_title.png" alt="2.審査後 ID・パスワード発行" width="660" height="35">
+                        </div>
+                        <div class='clearfix'>
+                            <img loading="lazy" src="https://blog.dolabo.co.jp/wp-content/themes/do-2017/img/apply-form/apply-form_step2.png" alt="審査後 ID・パスワード発行" width="242" height="99">
+                            <div class='step-text'>
+                                <p>お取引条件・ID・パスワードがメールで通知されます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='step-box'>
+                        <div class='step-box-items'>
+                            <img loading="lazy" src="https://blog.dolabo.co.jp/wp-content/themes/do-2017/img/apply-form/apply-form_step3_title.png" alt="3.お取引開始" width="660" height="35">
+                        </div>
+                        <div class='clearfix'>
+                            <img loading="lazy" src="https://blog.dolabo.co.jp/wp-content/themes/do-2017/img/apply-form/apply-form_step2.png" alt="審査後 ID・パスワード発行" width="242" height="99">
+                            <div class='step-text'>
+                                <p>ご注文が可能になります。<br>
+                                    掛売（後払い）希望の方は、ログインした上でPaid のご登録へとお進みください。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <script src="{{ mix('js/app.js') }}"></script>
