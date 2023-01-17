@@ -1,16 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components';
+import Header from './header/Header';
 
 function App() {
-  const Text = styled.text`
-    color: blue;
-  `;
 
   return (
-    <Text>
-      text
-    </Text>
+    <>
+      <Header />
+    </>
   );
 }
 
