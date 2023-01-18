@@ -6170,11 +6170,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].header(_templateObject || (_templateObject = _taggedTemplateLiteral([""])));
+var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: relative;\n"])));
 
 var Header = function Header() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(StyledHeader, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_header_parts_HeaderBar__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_header_parts_MainHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_header_parts_HeaderBar__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_header_parts_GlobalHeader__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_header_parts_MainHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 };
 
@@ -6193,13 +6193,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
+
+var StyledGlobalHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  height: 100vw;\n  width: 220px;\n"])));
 
 var GlobalHeader = function GlobalHeader() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {});
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(StyledGlobalHeader, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "globalHedder__siteName",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "",
+          children: "Do! earth & green"
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "globalHedder__beginner",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+        href: "",
+        children: ["\u30B5\u30FC\u30D3\u30B9\u306E\u3054\u6848\u5185", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          children: "\u306F\u3058\u3081\u3066\u306E\u65B9\u3078"
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "gnav",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
+        className: "adminMenu"
+      })
+    })]
+  });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalHeader);
@@ -6284,21 +6313,25 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
  // CSS
 
 
-var StyledMainNav = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral([""]))); // globalItem
+var StyledMainNav = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 30px;\n  right: 0;\n  width: calc(100% - 220px);\n  color: #677873;\n\n  .mainHeaderBar__ul {\n    height: 45px;\n    display: flex;\n    align-items: center;\n    padding: 0 0 0 15px;\n    & li {\n      height: 100%;\n      margin: 0 10px 0 0;\n      font-size: .7rem;\n      line-height: 2.3rem;\n    }\n    & li:first-child {\n      margin-left: auto;\n    }\n    & li:last-child {\n      margin-right: 0;\n    }\n  }\n\n  .btn_tel {\n    display: inline-block;\n    padding: 0 0 0 20px;\n    font-size: 1rem;\n    font-weight: 700;\n    \n  }\n\n  .btn_cart {\n    display: block;\n    padding: 0 20px 0 50px;\n    font-size: .8rem;\n    font-weight: 700;\n    background-color: #eee;\n  }\n"]))); // globalItem
 
 var navList = [{
   text: "0570-04-1234",
-  href: ""
+  href: "#",
+  "class": "btn_tel"
 }, {
   text: "受付時間：平日9:00~17:00",
   href: null
 }, {
   text: "カートを見る",
-  href: ""
+  href: "#",
+  "class": "btn_cart"
 }];
 var mainNav = navList.map(function (list) {
   var menu = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
     children: list.href ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+      href: list.href,
+      className: list["class"],
       children: list.text
     }) : list.text
   }, list.text);
@@ -6309,6 +6342,7 @@ var mainNav = navList.map(function (list) {
 var MainHeader = function MainHeader() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(StyledMainNav, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
+      className: "mainHeaderBar__ul",
       children: mainNav
     })
   });
