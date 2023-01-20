@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import GlobalHeader from "./header-parts/GlobalHeader";
-import HeaderBar from "./header-parts/HeaderBar";
-import MainHeader from "./header-parts/MainHeader";
+import { GlobalHeader, HeaderBar, MainHeader } from "./index";
 
 const StyledHeader = styled.header`
   position: relative;
