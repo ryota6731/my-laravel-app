@@ -1,20 +1,23 @@
 import styled from "styled-components";
-import { LogoTitle, GlobalNav } from "./index";
+import { LogoTitle, GlobalNav, HeaderFixed } from "./index";
 
 const StyledGlobalHeader = styled.div`
   color: #677873;
-  height: 100vw;
-  width: 170px;
+  width: 220px;
   padding: 23px;
+  border-right: solid 1px #000;
 `;
 
 const GlobalHeader = () => {
 
   return (
+    <>
     <StyledGlobalHeader>
       <LogoTitle />
       <GlobalNav />
     </StyledGlobalHeader>
+    <HeaderFixed />
+    </>
   )
 }
 

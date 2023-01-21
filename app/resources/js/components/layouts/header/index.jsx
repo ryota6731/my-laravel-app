@@ -6,3 +6,5 @@ export { default as GlobalNav } from "./GlobalNav";
 export { default as Beginner } from "./Beginner";
 export { default as AdminMenu } from "./AdminMenu";
 export { default as SearchBox } from "./SearchBox";
+export { default as CatMenu } from "./CatMenu";
+export { default as HeaderFixed } from "./HeaderFixed";

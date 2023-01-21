@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AdminMenu, Beginner, SearchBox } from "./index";
+import { AdminMenu, Beginner, SearchBox, CatMenu } from "./index";
 
 const StyledGlobalNav = styled.div``;
 
@@ -9,6 +9,7 @@ const GlobalNav = () => {
       <Beginner />
       <AdminMenu />
       <SearchBox />
+      <CatMenu />
     </StyledGlobalNav>
   )
 }

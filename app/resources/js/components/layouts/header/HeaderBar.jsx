@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import uuid from "react-uuid";
 
 // CSS
 const StyledNavBar = styled.nav`
@@ -39,7 +40,7 @@ const navList = [
   { label: "> ショールームのご案内", link: "" },
   { label: "> お問い合わせ", link: "" }
 ];
-const navBar = navList.map((list) => <li className="headerBar__li" key={list.label}><a href={list.link}>{list.label}</a></li>);
+const navBar = navList.map((list) => <li className="headerBar__li" key={uuid()}><a href={list.link}>{list.label}</a></li>);
 
 const HeaderBar = () => {
 
