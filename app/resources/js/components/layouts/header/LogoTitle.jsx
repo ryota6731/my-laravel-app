@@ -6,13 +6,13 @@ const StyledLogo = styled.div`
     & img {
       display: block;
       margin: 0 auto;
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       text-align: center;
     }
     & h1 {
-      font-size: .8rem;
+      font-size: 1rem;
       text-align: center;
       margin-top: 5px;
     }

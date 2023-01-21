@@ -6155,14 +6155,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-uuid */ "./node_modules/react-uuid/uuid.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_uuid__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
+
+
+
+var StyledAdminMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 30px;\n  li {\n    font-size: .8rem;\n    margin-bottom: 10px;\n    & img {\n      width: 1.5rem;\n      height: 1.5rem;\n      margin-right: 5px;\n    }\n  }\n"])));
 
 var AdminMenu = function AdminMenu() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: "AdminMenu"
+  var adminMenuItem = [{
+    label: "ログイン",
+    logo: "images/login-logo.png",
+    href: "#"
+  }, {
+    label: "会員登録",
+    logo: "images/register-logo.png",
+    href: "#"
+  }, {
+    label: "ご利用ガイド",
+    logo: "images/beginer-logo.png",
+    href: "#"
+  }, {
+    label: "在庫確認",
+    logo: "images/stock-logo.jpg",
+    href: "#"
+  }, {
+    label: "カタログ",
+    logo: "images/login-logo.png",
+    href: "#"
+  }, {
+    label: "まとめてオーダー",
+    logo: "images/login-logo.png",
+    href: "#"
+  }, {
+    label: "Do! Magazine",
+    logo: "images/login-logo.png",
+    href: "#"
+  }, {
+    label: "画像・POPダウンロード",
+    logo: "images/login-logo.png",
+    href: "#"
+  }];
+  var adminMenu = adminMenuItem.map(function (item) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("li", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        src: item.logo,
+        alt: ""
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: item.href,
+        children: item.label
+      })]
+    }, react_uuid__WEBPACK_IMPORTED_MODULE_0___default()());
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(StyledAdminMenu, {
+    children: adminMenu
   });
 };
 
@@ -6190,7 +6243,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledBeginner = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 30px 0;\n\n  a {\n    border: 1px solid #677873;\n    border-radius: 100px;\n    font-size: .5rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n    padding: 7px 10px;\n\n    & span {\n      font-size: .3rem;\n    }\n  }\n"])));
+var StyledBeginner = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 30px 0;\n\n  a {\n    border: 1px solid #677873;\n    border-radius: 100px;\n    font-size: 1rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n    padding: 7px 10px;\n\n    & span {\n      font-size: .7rem;\n    }\n  }\n"])));
 
 var Beginner = function Beginner() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(StyledBeginner, {
@@ -6204,6 +6257,153 @@ var Beginner = function Beginner() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Beginner);
+
+/***/ }),
+
+/***/ "./resources/js/components/layouts/header/CatMenu.jsx":
+/*!************************************************************!*\
+  !*** ./resources/js/components/layouts/header/CatMenu.jsx ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-uuid */ "./node_modules/react-uuid/uuid.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_uuid__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledCatMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 1.5rem;\n  font-size: .8rem;\n  li {\n    margin-bottom: 1rem;\n    & span {\n      background-color: #677873;\n      color: #FFF;\n      display: block;\n      line-height: 1.3;\n      padding: 0.3rem 5px 0.2rem;\n    }\n    & a {\n      color: #333;\n    }\n    &:nth-child(n+2) {\n      ::after {\n        content: \">\";\n        float: right;\n        margin-right: 10px;\n      }\n    }\n  }\n"])));
+
+var CatMenu = function CatMenu() {
+  var catMenu = [{
+    group: "cateegory",
+    list: [{
+      label: "カテゴリーから選ぶ",
+      title: true
+    }, {
+      label: "植物",
+      href: "#"
+    }, {
+      label: "栽培セット・種",
+      href: "#"
+    }, {
+      label: "土・肥料",
+      href: "#"
+    }, {
+      label: "ガーデン道具",
+      href: "#"
+    }, {
+      label: "ジョーロ・スプレー",
+      href: "#"
+    }, {
+      label: "グリーンアクセサリー",
+      href: "#"
+    }, {
+      label: "鉢・鉢カバー",
+      href: "#"
+    }, {
+      label: "アートフラワー",
+      href: "#"
+    }, {
+      label: "2022 NEW ITEM",
+      href: "#"
+    }]
+  }, {
+    group: "theme",
+    list: [{
+      label: "テーマから選ぶ",
+      title: true
+    }, {
+      label: "グリーンライフの定番",
+      href: "#"
+    }, {
+      label: "グリーンを元気に",
+      href: "#"
+    }, {
+      label: "サステナブルな暮らし",
+      href: "#"
+    }, {
+      label: "ギフトにおすすめ",
+      href: "#"
+    }, {
+      label: "カラーで選ぶ",
+      href: "#"
+    }]
+  }, {
+    group: "brand",
+    list: [{
+      label: "ブランドから選ぶ",
+      title: true
+    }, {
+      label: "evo",
+      href: "#"
+    }, {
+      label: "SPEAR & JACKSON",
+      href: "#"
+    }, {
+      label: "KANGURP",
+      href: "#"
+    }, {
+      label: "TURK",
+      href: "#"
+    }, {
+      label: "plastia",
+      href: "#"
+    }, {
+      label: "PlasTime",
+      href: "#"
+    }, {
+      label: "BERGS POTTER",
+      href: "#"
+    }, {
+      label: "EPOCA",
+      href: "#"
+    }, {
+      label: "HILLBRUSH",
+      href: "#"
+    }, {
+      label: "Another Studio",
+      href: "#"
+    }, {
+      label: "Blundstone",
+      href: "#"
+    }, {
+      label: "Tarter",
+      href: "#"
+    }]
+  }];
+  var Menu = catMenu.map(function (item) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(StyledCatMenu, {
+      className: item.group,
+      children: item.list.map(function (item2) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: item2.title ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+            children: item2.label
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: item2.href,
+            children: item2.label
+          })
+        }, react_uuid__WEBPACK_IMPORTED_MODULE_0___default()());
+      })
+    }, react_uuid__WEBPACK_IMPORTED_MODULE_0___default()());
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: Menu
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CatMenu);
 
 /***/ }),
 
@@ -6229,11 +6429,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledGlobalHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  color: #677873;\n  height: 100vw;\n  width: 170px;\n  padding: 23px;\n"])));
+
+var StyledGlobalHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  color: #677873;\n  width: 220px;\n  padding: 23px;\n  border-right: solid 1px #000;\n"])));
 
 var GlobalHeader = function GlobalHeader() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(StyledGlobalHeader, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.LogoTitle, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.GlobalNav, {})]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(StyledGlobalHeader, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.LogoTitle, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.GlobalNav, {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.HeaderFixed, {})]
   });
 };
 
@@ -6267,7 +6470,7 @@ var StyledGlobalNav = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].
 
 var GlobalNav = function GlobalNav() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(StyledGlobalNav, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.Beginner, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.AdminMenu, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.SearchBox, {})]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.Beginner, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.AdminMenu, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.SearchBox, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_index__WEBPACK_IMPORTED_MODULE_0__.CatMenu, {})]
   });
 };
 
@@ -6320,16 +6523,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-uuid */ "./node_modules/react-uuid/uuid.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_uuid__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+
  // CSS
 
 
-var StyledNavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 30px;\n    background-color: #677873;\n\n    .headerBar__ul {\n      display: flex;\n      align-items: center;\n      justify-content: right;\n\n      & .headerBar__li {\n        font-size: .9rem;\n        line-height: 2rem;\n        color: #fff;\n        padding-left: 1rem;\n        &:nth-child(1) {\n          margin-right: auto;\n          margin-left: 0;\n          & a {\n            text-decoration: underline;\n            :hover {\n              text-decoration: none;\n            }\n          }\n        }\n        &:last-child {\n          padding-right: 1rem;\n        }\n      }\n    }\n  "]))); // navItem
+var StyledNavBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 30px;\n    background-color: #677873;\n\n    .headerBar__ul {\n      display: flex;\n      align-items: center;\n      justify-content: right;\n\n      & .headerBar__li {\n        font-size: .9rem;\n        line-height: 2rem;\n        color: #fff;\n        padding-left: 1rem;\n        &:nth-child(1) {\n          margin-right: auto;\n          margin-left: 0;\n          & a {\n            text-decoration: underline;\n            :hover {\n              text-decoration: none;\n            }\n          }\n        }\n        &:last-child {\n          padding-right: 1rem;\n        }\n      }\n    }\n  "]))); // navItem
 
 var navList = [{
   label: "オンラインカタログはこちら",
@@ -6345,18 +6551,18 @@ var navList = [{
   link: ""
 }];
 var navBar = navList.map(function (list) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
     className: "headerBar__li",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
       href: list.link,
       children: list.label
     })
-  }, list.label);
+  }, react_uuid__WEBPACK_IMPORTED_MODULE_0___default()());
 });
 
 var HeaderBar = function HeaderBar() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(StyledNavBar, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(StyledNavBar, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
       className: "headerBar__ul",
       children: navBar
     })
@@ -6364,6 +6570,72 @@ var HeaderBar = function HeaderBar() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderBar);
+
+/***/ }),
+
+/***/ "./resources/js/components/layouts/header/HeaderFixed.jsx":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/layouts/header/HeaderFixed.jsx ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-uuid */ "./node_modules/react-uuid/uuid.js");
+/* harmony import */ var react_uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_uuid__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledFixedNav = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  height: 45px;\n  width: calc(100% - 220px);\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 220px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 30px 0 30px 20px;\n  display: none;\n\n  ul {\n    height: 60px;\n    display: flex;\n    align-items: center;\n  }\n\n  li {\n    height: 100%;\n    padding: 0 15px;\n    :last-child {\n      background-color: #eeeeee;\n    }\n  }\n\n  a {\n    height: 100%;\n    display: flex;\n    align-items: center;\n  }\n\n  span {\n    margin-left: 10px;\n  }\n\n  img {\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n  }\n"])));
+
+var HeaderFixed = function HeaderFixed() {
+  var navItem = [{
+    logo: "",
+    name: "ログイン",
+    href: "#"
+  }, {
+    logo: "",
+    name: "会員登録",
+    href: "#"
+  }, {
+    logo: "",
+    name: "カートを見る",
+    href: "#"
+  }];
+  var fixedNav = navItem.map(function (item) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: item.href,
+        children: item.name
+      })
+    }, react_uuid__WEBPACK_IMPORTED_MODULE_0___default()());
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(StyledFixedNav, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+      href: "",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        src: "images/logo.jpg",
+        alt: ""
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "Do! earth & Green"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+      children: fixedNav
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderFixed);
 
 /***/ }),
 
@@ -6387,7 +6659,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledLogo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  h1 a {\n    display: block;\n    & img {\n      display: block;\n      margin: 0 auto;\n      width: 100px;\n      height: 100px;\n      border-radius: 50%;\n      text-align: center;\n    }\n    & h1 {\n      font-size: .8rem;\n      text-align: center;\n      margin-top: 5px;\n    }\n  }\n"])));
+var StyledLogo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  h1 a {\n    display: block;\n    & img {\n      display: block;\n      margin: 0 auto;\n      width: 120px;\n      height: 120px;\n      border-radius: 50%;\n      text-align: center;\n    }\n    & h1 {\n      font-size: 1rem;\n      text-align: center;\n      margin-top: 5px;\n    }\n  }\n"])));
 
 var LogoTitle = function LogoTitle() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(StyledLogo, {
@@ -6429,7 +6701,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
  // CSS
 
 
-var StyledMainNav = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 30px;\n  right: 0;\n  width: calc(100% - 170px);\n  color: #677873;\n\n  .mainHeaderBar__ul {\n    height: 50px;\n    display: flex;\n    align-items: center;\n    padding: 0 0 0 15px;\n    & li {\n      height: 100%;\n      margin: 0 10px 0 0;\n      font-size: .7rem;\n      line-height: 2.3rem;\n    }\n    & li:first-child {\n      margin-left: auto;\n    }\n    & li:last-child {\n      margin-right: 0;\n    }\n  }\n\n  .btn_tel {\n    display: inline-block;\n    padding: 0 0 0 20px;\n    font-size: 1rem;\n    font-weight: 700;\n    \n  }\n\n  .btn_cart {\n    display: block;\n    padding: 0 20px 0 50px;\n    font-size: .8rem;\n    font-weight: 700;\n    background-color: #eee;\n  }\n"]))); // globalItem
+var StyledMainNav = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 30px;\n  right: 0;\n  width: calc(100% - 220px);\n  color: #677873;\n\n  .mainHeaderBar__ul {\n    height: 50px;\n    display: flex;\n    align-items: center;\n    padding: 0 0 0 15px;\n    & li {\n      height: 100%;\n      margin: 0 10px 0 0;\n      font-size: .7rem;\n      line-height: 2.3rem;\n    }\n    & li:first-child {\n      margin-left: auto;\n    }\n    & li:last-child {\n      margin-right: 0;\n    }\n  }\n\n  .btn_tel {\n    display: inline-block;\n    padding: 0 0 0 20px;\n    font-size: 1rem;\n    font-weight: 700;\n    \n  }\n\n  .btn_cart {\n    display: block;\n    padding: 0 20px 0 50px;\n    font-size: .8rem;\n    font-weight: 700;\n    background-color: #eee;\n  }\n"]))); // globalItem
 
 var navList = [{
   text: "0570-04-1234",
@@ -6479,14 +6751,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
+
+
+var StyledSearchBox = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 30px;\n  input {\n    background-color: #fff;\n    width: 100%;\n    height: 34px;\n    line-height: 27px;\n    font-size: .7rem;\n    padding: 5px 35px 5px 5px;\n    position: relative;\n    z-index: 1;\n    border: solid 2px #677873;\n  }\n\n  a {\n    width: 37px;\n    height: 30px;\n    position: absolute;\n    z-index: 3;\n    padding-left: 2px;\n    transform: translate(-38px, 2px);\n    background-color: #677873;\n    color: #fff;\n    line-height: 30px;\n  }\n"])));
 
 var SearchBox = function SearchBox() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: "SearchBox"
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(StyledSearchBox, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+      type: "text",
+      placeholder: "\u5546\u54C1\u540D,\u30AD\u30FC\u30EF\u30FC\u30C9,\u54C1\u756A"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+      href: "#",
+      children: "\u691C\u7D22"
+    })]
   });
 };
 
@@ -6505,9 +6789,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AdminMenu": () => (/* reexport safe */ _AdminMenu__WEBPACK_IMPORTED_MODULE_6__["default"]),
 /* harmony export */   "Beginner": () => (/* reexport safe */ _Beginner__WEBPACK_IMPORTED_MODULE_5__["default"]),
+/* harmony export */   "CatMenu": () => (/* reexport safe */ _CatMenu__WEBPACK_IMPORTED_MODULE_8__["default"]),
 /* harmony export */   "GlobalHeader": () => (/* reexport safe */ _GlobalHeader__WEBPACK_IMPORTED_MODULE_0__["default"]),
 /* harmony export */   "GlobalNav": () => (/* reexport safe */ _GlobalNav__WEBPACK_IMPORTED_MODULE_4__["default"]),
 /* harmony export */   "HeaderBar": () => (/* reexport safe */ _HeaderBar__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   "HeaderFixed": () => (/* reexport safe */ _HeaderFixed__WEBPACK_IMPORTED_MODULE_9__["default"]),
 /* harmony export */   "LogoTitle": () => (/* reexport safe */ _LogoTitle__WEBPACK_IMPORTED_MODULE_3__["default"]),
 /* harmony export */   "MainHeader": () => (/* reexport safe */ _MainHeader__WEBPACK_IMPORTED_MODULE_1__["default"]),
 /* harmony export */   "SearchBox": () => (/* reexport safe */ _SearchBox__WEBPACK_IMPORTED_MODULE_7__["default"])
@@ -6520,6 +6806,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Beginner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Beginner */ "./resources/js/components/layouts/header/Beginner.jsx");
 /* harmony import */ var _AdminMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./AdminMenu */ "./resources/js/components/layouts/header/AdminMenu.jsx");
 /* harmony import */ var _SearchBox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SearchBox */ "./resources/js/components/layouts/header/SearchBox.jsx");
+/* harmony import */ var _CatMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CatMenu */ "./resources/js/components/layouts/header/CatMenu.jsx");
+/* harmony import */ var _HeaderFixed__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./HeaderFixed */ "./resources/js/components/layouts/header/HeaderFixed.jsx");
+
+
 
 
 
@@ -56174,6 +56464,52 @@ exports.typeOf = typeOf;
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/react-uuid/uuid.js":
+/*!*****************************************!*\
+  !*** ./node_modules/react-uuid/uuid.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+/**
+A function that returns a universally unique identifier (uuid).  
+example: 1b83fd69-abe7-468c-bea1-306a8aa1c81d
+@returns `string` : 32 character uuid (see example)
+*/
+function uuid() {
+	const hashTable = [
+		"a",
+		"b",
+		"c",
+		"d",
+		"e",
+		"f",
+		"0",
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"8",
+		"9",
+	];
+	let uuid = [];
+	for (let i = 0; i < 36; i++) {
+		if (i === 8 || i === 13 || i === 18 || i === 23) {
+			uuid[i] = "-";
+		} else {
+			uuid[i] = hashTable[Math.ceil(Math.random() * hashTable.length - 1)];
+		}
+	}
+	return uuid.join("");
+}
+
+module.exports = uuid;
 
 
 /***/ }),

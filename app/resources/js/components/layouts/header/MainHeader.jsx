@@ -5,7 +5,7 @@ const StyledMainNav = styled.nav`
   position: absolute;
   top: 30px;
   right: 0;
-  width: calc(100% - 170px);
+  width: calc(100% - 220px);
   color: #677873;
 
   .mainHeaderBar__ul {

@@ -6,7 +6,7 @@ const StyledBeginner = styled.div`
   a {
     border: 1px solid #677873;
     border-radius: 100px;
-    font-size: .5rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@ const StyledBeginner = styled.div`
     padding: 7px 10px;
 
     & span {
-      font-size: .3rem;
+      font-size: .7rem;
     }
   }
 `;
