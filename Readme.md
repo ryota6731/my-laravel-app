@@ -16,20 +16,23 @@ docker-compose rm -f
 docker-compose up -d
 ```
 
+## appコンテナに入る
+`docker compose exec app bash`  
+
+
 ## composerのインストール  
-my-laravel-app/app で、`composer install`  
+appディレクトリで 
+```
+chmod -R 777 storage bootstrap/cache
+composer install
+```
 
 ## .envファイル作成  
-.envファイルを作成し  
 .env.exampleの中身を.envへコピー  
-DBの情報をdocker-compose.ymlを参考に入力する。  
-`php artisan key:generate`を実行  
-APP_KEYに、キー生成されているか確認する。  
-`php artisan serve`を実行し立ち上がるかテストする。  
-
-## npm install  
-my-laravel-app/app で、`npm install`を実行
-
-## Browsersyncの起動方法  
-appディレクトリで  
-`npm run watch ` 
+`cp .env.example .env`  
+APP_KEYを生成  
+`php artisan key:generate`   
+シンボリックリンクを張る  
+`php artisan storage:link`  
+マイグレーション  
+`php artisan migrate`
